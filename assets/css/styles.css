@@ -415,3 +415,137 @@ a:hover {
 /* ==========================================================
    STUDENTS: ADD YOUR CUSTOM STYLES BELOW THIS LINE
    ========================================================== */
+#main-header {
+  background-color: var(--color-primary);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+.logo-text {
+  color: var(--color-white);
+}
+
+.nav-link {
+  color: var(--color-white);
+}
+
+.nav-menu {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-white);
+  position: relative;
+  display: block;
+}
+
+.hamburger::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: -8px;
+  background-color: var(--color-white);
+}
+
+.hamburger::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 8px;
+  background-color: var(--color-white);
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+}
+/*HERO SECTION */
+.hero-section {
+background: linear-gradient(135deg, #0A1F3F 0%, #132E5B 50%, #2D7FF9 100%) ;
+color: var(--color-white);
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.hero-section h1 {
+  color: var(--color-white);
+}
+
+.hero-section p {
+  color: var(--color-white);
+}
+.hero-section .text-caption {
+  color: var(--color-accent);
+}
+.hero-section .container {
+  text-align: center;
+}
+
+/*STAT SECTION*/
+.stat-box {
+text-align: center;
+}
+.stat-number {
+font-size: var(--fs-h1);
+font-family: var(--font-heading);
+font-weight: var(--fw-bold);
+color: var(--color-accent);
+}
+.stat-label {
+font-size: var(--fs-small);
+color: var(--color-text-light);
+}
+/* FOR DARKBKGROUND*/
+.bg-primary {
+  color: var(--color-white);
+}
+.bg-primary h2 {
+  color: var(--color-white);
+}
+.bg-primary p {
+  color: var(--color-white);
+}
+.bg-primary h4 {
+  color: var(--color-white);
+}
+
+/* FOTTER BOTTOM*/
+.footer-bottom {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+.footer-social {
+  display: flex;
+  gap: var(--space-md);
+}
+.footer-social a {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  background-color: rgb(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.footer-col h4 {
+  margin-bottom: var(--space-md);
+}
