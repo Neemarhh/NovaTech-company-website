@@ -50,17 +50,53 @@
     <!-- ========== SERVICES LIST ========== -->
     <section id="services-list" class="section bg-white">
         <div class="container">
-            <!-- TODO: Display ALL 5 core services from docs/design/PROJECT-BRIEF.md -->
-            <!-- Each service needs: icon/image, heading, detailed description (min 2 sentences) -->
-            <!-- Use a card-based or grid layout -->
-
-            <!-- SERVICES:
-                1. Web Application Development
-                2. Cloud Infrastructure & DevOps
-                3. Mobile App Development
-                4. Cybersecurity & IT Consulting
-                5. Corporate Tech Training
-            -->
+           <div class="grid grid-3">
+              <div class="card">
+                <img src="assets/images/services/service-web-dev.png" alt="mobile app development">
+                 <span class="service-icon"></span>
+                 <h3> Web Application Development</h3>
+                 <p>We design, build, and deploy modern, responsive web applications 
+                 tailored to your business needs. From sleek landing pages to 
+                 complex enterprise platforms, our full-stack team delivers 
+                  pixel-perfect solutions using the latest technologies.</p>
+               </div>
+               <div class="card">
+                <img src="assets/images/services/service-cloud.png" alt="cloud">
+                 <span class="service-icon"></span>
+                 <h3>Cloud Infrastructure & DevOps</h3>
+                 <p> We help businesses migrate to the cloud and stay there securely. 
+                   Our certified cloud engineers set up, manage, and optimize 
+                   infrastructure on AWS, Azure, and Google Cloud — ensuring your 
+                   systems are scalable, resilient, and cost-effective.</p>
+               </div>
+               <div class="card">
+                <img src="assets/images/services/service-mobile.png" alt="mobile app development">
+                 <span class="service-icon"></span>
+                 <h3>Mobile App Development</h3>
+                 <p>Reach your customers wherever they are. We build native and 
+                   cross-platform mobile applications for iOS and Android that are 
+                   fast, intuitive, and built for scale — from fintech wallets to 
+                   e-commerce marketplaces.</p>
+               </div>
+               <div class="card">
+                <img src="assets/images/services/service-security.png" alt="mobile app development">
+                 <span class="service-icon"></span>
+                 <h3>Cybersecurity & IT Consulting</h3>
+                 <p>Protect your digital assets with our comprehensive cybersecurity 
+                   services. We provide vulnerability assessments, penetration 
+                   testing, security audits, and ongoing managed security to keep 
+                   your business safe from evolving threats</p>
+               </div>
+               <div class="card">
+                <img src="assets/images/services/service-training.png" alt="mobile app development">
+                 <span class="service-icon"></span>
+                 <h3>Corporate Tech Training</h3>
+                 <p>Upskill your workforce with our hands-on technology training 
+                   programs. We offer customized workshops and bootcamps in web 
+                   development, data analytics, cloud computing, and software 
+                   engineering for teams of all sizes.</p>
+               </div>
+           </div>
         </div>
     </section>
 
@@ -68,28 +104,204 @@
     <!-- ========== SERVICE DETAIL INTERACTION ========== -->
     <section id="service-detail" class="section">
         <div class="container">
-            <!-- TODO: JavaScript-powered interaction -->
-            <!-- Choose ONE: Accordion (expand/collapse), Tabs, or Modal -->
-            <!-- When a service is clicked, reveal more details -->
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Web Application Development</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We design, build, and deploy modern, responsive web applications 
+                       tailored to your business needs. From sleek landing pages to 
+                       complex enterprise platforms, our full-stack team delivers 
+                       pixel-perfect solutions using the latest technologies.</p>
+                       <ul>
+                        <li>Custom web app development (React, Angular, Node.js)</li>
+                        <li>Responsive design for all devices</li>
+                        <li>E-commerce platforms & payment integration</li>
+                        <li>Content management systems (CMS)</li>
+                        <li>Progressive Web Apps (PWA)</li>
+                       </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Cloud Infrastructure & DevOps</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We help businesses migrate to the cloud and stay there securely. 
+                           Our certified cloud engineers set up, manage, and optimize 
+                           infrastructure on AWS, Azure, and Google Cloud — ensuring your 
+                           systems are scalable, resilient, and cost-effective.</p>
+                       <ul>
+                        <li>Cloud migration & architecture design</li>
+                        <li>CI/CD pipeline setup & automation</li>
+                        <li>Infrastructure as Code (Terraform, CloudFormation)</li>
+                        <li>24/7 monitoring & incident response</li>
+                        <li>Cost optimization & performance tuning</li>
+                       </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Mobile App Development</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Reach your customers wherever they are. We build native and 
+                       cross-platform mobile applications for iOS and Android that are 
+                      fast, intuitive, and built for scale — from fintech wallets to 
+                      e-commerce marketplaces</p>
+                       <ul>
+                        <li>iOS & Android native development</li>
+                        <li>Cross-platform apps (React Native, Flutter)</li>
+                        <li>UI/UX design for mobile</li>
+                        <li>App Store & Play Store deployment</li>
+                        <li>Push notifications & analytics integration</li>
+                       </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Cybersecurity & IT Consulting</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                     <p>Protect your digital assets with our comprehensive cybersecurity 
+                        services. We provide vulnerability assessments, penetration 
+                        testing, security audits, and ongoing managed security to keep 
+                        your business safe from evolving threats.</p>
+                       <ul>
+                        <li>Vulnerability assessments & penetration testing</li>
+                        <li>Security audits & compliance (ISO 27001, GDPR)</li>
+                        <li>Managed security services (SOC)</li>
+                        <li>Incident response & disaster recovery planning</li>
+                        <li>Employee security awareness training</li>
+                       </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Corporate Tech Training</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Upskill your workforce with our hands-on technology training 
+                        programs. We offer customized workshops and bootcamps in web 
+                        development, data analytics, cloud computing, and software 
+                        engineering for teams of all sizes.</p>
+                       <ul>
+                        <li>Custom curriculum design for your team</li>
+                        <li>Web development bootcamps (HTML, CSS, JS, React)</li>
+                        <li>Data analytics & visualization workshops</li>
+                        <li>Cloud certification preparation (AWS, Azure)</li>
+                        <li>On-site and remote training options</li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- HOW WE WORK SECTION -->
+     <section id="how-we-work" class="section bg-white">
+        <div class="container">
+         <div class="section-header">
+               <h2>How We Work</h2>
+          </div>
+             <div class="grid grid-4">
+                  <div class="process-step">
+                      <span class="step-number">01</span>
+                      <h3>Discovery</h3>
+                       <p>We start by understanding your business, goals, and 
+                        technical requirements through in-depth consultation.</p>
+                  </div>
+                  <div class="process-step">
+                      <span class="step-number">02</span>
+                      <h3>Planning</h3>
+                       <p>Our team creates a detailed project roadmap, wireframes, 
+                        and technical architecture tailored to your needs.</p>
+                  </div>
+                  <div class="process-step">
+                      <span class="step-number">03</span>
+                      <h3>Development</h3>
+                       <p>We build your solution using agile methodology with
+                        regular check-ins, demos, and feedback cycles.</p>
+                  </div>
+                  <div class="process-step">
+                      <span class="step-number">04</span>
+                      <h3>Delivery & Support </h3>
+                       <p>We deploy, test, and hand over your project with
+                        full documentation and ongoing support options.</p>
+                  </div>
+           </div> 
+       </div>        
+     </section>
+     
 
 
     <!-- ========== CTA SECTION ========== -->
     <section id="services-cta" class="section bg-primary">
         <div class="container text-center">
-            <!-- TODO: "Need a custom solution?" CTA linking to contact.html -->
+            <h2>Need a Custom Solution?</h2>
+            <p>Every business is unique. Let's build something that fits yours perfectly.</p>
+            <a href="contact.html" class="btn btn-primary">Request a Free Consultation</a>
         </div>
     </section>
 
-
-    <!-- ========== FOOTER ========== -->
+<!-- ========== FOOTER ========== -->
     <footer id="main-footer" class="bg-primary">
         <div class="container">
-            <!-- TODO: Footer content (same as index.html) -->
+         <div class="grid grid-4"> 
+            <div class="footer-col">
+               <h4>NovaTech Solutions</h4>
+               <p>Empowering Africa's Digital Future-
+                 One Solution at a Time. We deliver world-class
+                 technology solutions to businesses across Nigeria
+                 and west Africa.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="services.html">Web Development</a></li>
+                    <li><a href="services.html">Cloud &amp; DevOps</a></li>
+                    <li><a href="services.html">Mobile Apps</a></li>
+                    <li><a href="services.html">Cybersecurity</a></li>
+                    <li><a href="services.html">Tech Training</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">     
+                <h4>Get in Touch</h4>
+                <p> 📍14 Ademola Adetokunbo Crescent, Wuse 2,
+                   Abuja, FCT, Nigeria
+                </p>
+                <p>📞 +234 (0) 812 345 6789</p>
+                <p>✉️ info@novatechsolutions.com.ng</p>
+                <p>🕐 Mon – Fri, 8:00 AM – 5:00 PM (WAT)</p>
+            </div>
+         </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NovaTech Solutions. All rights reserved.</p>
+             <div class="footer-social">
+                 <a href="https://linkedin.com/company/novatechsolutions" aria-label="LinkedIn">LinkedIn |</a>
+                 <a href="https://twitter.com/NovaTechAbuja" aria-label="Twitter/X">Twitter |</a>
+                 <a href="mailto:info@novatechsolutions.com.ng" aria-label="Email">Email</a>
+               </div>
+            </div>
         </div>
     </footer>
-
 
     <!-- JavaScript -->
     <script src="assets/js/main.js"></script>

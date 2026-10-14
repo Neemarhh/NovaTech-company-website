@@ -54,14 +54,83 @@
             <!-- TODO (OPTIONAL): Filter buttons to sort projects by category -->
             <!-- Example categories: All, Web Apps, Mobile, Cloud, Cybersecurity -->
             <div class="filter-buttons text-center">
-                <!-- <button class="btn btn-outline filter-btn active" data-filter="all">All</button> -->
-                <!-- <button class="btn btn-outline filter-btn" data-filter="web">Web Apps</button> -->
-                <!-- <button class="btn btn-outline filter-btn" data-filter="mobile">Mobile</button> -->
-                <!-- <button class="btn btn-outline filter-btn" data-filter="cloud">Cloud</button> -->
+                <button class="btn btn-outline filter-btn active" data-filter="all">All</button> 
+                <button class="btn btn-outline filter-btn" data-filter="web">Web Apps</button> 
+                <button class="btn btn-outline filter-btn" data-filter="mobile">Mobile</button> 
+                <button class="btn btn-outline filter-btn" data-filter="cloud">Cloud</button> 
+                <button class="btn btn-outline filter-btn" data-filter="cybersecurity">Cybersecurity</button>
             </div>
 
             <!-- TODO: Portfolio project cards in a responsive grid -->
             <div class="grid grid-3">
+                <div class="card portfolio-card" data-category="web">
+                    <img src="assets/images/portfolio/project-agrotrack.png" alt="AgroTrack — Inventory management system for AgroFresh Nigeria">
+                    <span class="category-tag">Web App</span>
+                    <h3>AgroTrack - Inventory Management System</h3>
+                    <p class="text-muted">Client: AgroFresh Nigeria Ltd</p>
+                    <p>A comprehensive inventory management platform built for one of 
+                    Lagos' largest agribusiness companies. Tracks produce from farm 
+                    to warehouse with real-time stock updates and automated reorder 
+                    alerts.</p>
+                    <p class="text-small">Technology: HTML, CSS, JavaScript, Node.js, MongoDB</p>
+                    <a href="#" class="card-link">View Details</a>
+                </div>
+                <div class="card portfolio-card" data-category="mobile">
+                    <img src="assets/images/portfolio/project-payswift.png" alt="Payswift — Cross-Border Payment Wallet ">
+                    <span class="category-tag">Mobile App</span>
+                    <h3>PaySwift — Cross-Border Payment Wallet</h3>
+                    <p class="text-muted">PaySwift Technologies</p>
+                    <p>A mobile fintech application enabling seamless cross-border 
+                    payments across West Africa. Supports multiple currencies with 
+                    real-time exchange rates and biometric authentication.</p>
+                    <p class="text-small">Technologies: React Native, Firebase, Stripe API</p>
+                    <a href="#" class="card-link">View Details</a>
+                </div>
+                <div class="card portfolio-card" data-category="cloud">
+                    <img src="assets/images/portfolio/project-cloudfirst.png" alt="CloudFirst — Government Agency Cloud Migration">
+                    <span class="category-tag">Cloud</span>
+                    <h3>CloudFirst — Government Agency Cloud Migration</h3>
+                    <p class="text-muted">Federal Ministry of Communications, Nigeria</p>
+                    <p>A full-scale migration of legacy on-premise systems to AWS cloud 
+                    infrastructure. Reduced operational costs by 45% and improved 
+                    system uptime to 99.9%.</p>
+                    <p class="text-small">Technologies: AWS, Terraform, Docker, Kubernetes</p>
+                    <a href="#" class="card-link">View Details</a>
+                </div>
+                <div class="card portfolio-card" data-category="cybersecurity">
+                    <img src="assets/images/portfolio/project-securenet.png" alt="SecureNet — Banking Security Audit">
+                    <span class="category-tag">Cybersecurity</span>
+                    <h3>SecureNet — Banking Security Audit</h3>
+                    <p class="text-muted">Sterling Microfinance Bank</p>
+                    <p>A comprehensive cybersecurity audit that identified 23 critical 
+                    vulnerabilities across the bank's digital infrastructure. 
+                    Implemented a security remediation roadmap and ongoing monitoring.</p>
+                    <p class="text-small">Technologies: Nessus, Burp Suite, Wireshark, SIEM</p>
+                    <a href="#" class="card-link">View Details</a>
+                </div>
+                <div class="card portfolio-card" data-category="web">
+                    <img src="assets/images/portfolio/project-skillup.png" alt="SkillUp — E-Learning Platform">
+                    <span class="category-tag">Web App</span>
+                    <h3>SkillUp — E-Learning Platform</h3>
+                    <p class="text-muted">Covenant University</p>
+                    <p>A feature-rich learning management system (LMS) serving 5,000+ 
+                    students. Includes video lectures, quizzes, progress tracking, 
+                    and certificate generation.</p>
+                    <p class="text-small">Technologies: React, Node.js, PostgreSQL, AWS S3</p>
+                    <a href="#" class="card-link">View Details</a>
+                </div>
+                <div class="card portfolio-card" data-category="mobile">
+                    <img src="assets/images/portfolio/project-markethub.png" alt="MarketHub — Multi-Vendor Marketplace">
+                    <span class="category-tag">Mobile App</span>
+                    <h3>MarketHub — Multi-Vendor Marketplace</h3>
+                    <p class="text-muted">MarketHub Nigeria</p>
+                    <p>A multi-vendor e-commerce marketplace app connecting local 
+                    Nigerian vendors with customers nationwide. Features include 
+                    vendor dashboards, real-time order tracking, and integrated 
+                    payment gateway</p>
+                    <p class="text-small">Technologies: Flutter, Firebase, Paystack API</p>
+                    <a href="#" class="card-link">View Details</a>
+                </div>
                 <!-- Each project card should include: -->
                 <!-- - Project screenshot/image -->
                 <!-- - Project title -->
@@ -89,7 +158,44 @@
                 <h2>What Our Clients Say</h2>
                 <p>Trusted by businesses across Nigeria and West Africa.</p>
             </div>
-            <!-- TODO (OPTIONAL): Testimonial cards or carousel -->
+            <div class="grid grid-3">
+                <div class="card testimonial-card">
+                  <p class="stars">★★★★★</p>
+                  <blockquote>"NovaTech transformed our entire business operations with 
+                    their custom inventory management system. Their team was professional,
+                    responsive, and delivered ahead of schedule."
+                  </blockquote><div class="testimonial-author">
+                    <img src="assets/images/clients/client-olusegun.png" alt="Chief Olusegun Adeyemi - CEO, AgroFresh Nigeria Ltd">
+                  </div>
+                  <p class="testimonial-name">Chief Olusegun Adeyemi</p>
+                  <p class="text-muted text-small">CEO, AgroFresh Nigeria Ltd</p>
+              </div>
+                <div class="card testimonial-card">
+                  <p class="stars">★★★★★</p>
+                  <blockquote>"The mobile app they built for us has completely changed how we 
+                    engage with customers. Downloads exceeded 50,000 in the first 
+                    three months alone."
+                 </blockquote>
+                 <div class="testimonial-author">
+                    <img src="assets/images/clients/client-ngozi.png" alt="Ngozi Obi - Marketing Director, PaySwift Technologies">
+                  </div>
+                  <p class="testimonial-name">Ngozi Obi</p>
+                  <p class="text-muted text-small">Marketing Director, PaySwift Technologies</p>
+              </div>
+                <div class="card testimonial-card">
+                  <p class="stars">★★★★★</p>
+                  <blockquote>"Their cybersecurity audit revealed critical vulnerabilities we 
+                    didn't know existed. NovaTech's team potentially saved us from 
+                    millions in losses."
+                  </blockquote>
+                  <div class="testimonial-author">
+                    <img src="assets/images/clients/client-ibrahim.png" alt="Alhaji Ibrahim Musa - CTO, Sterling Microfinance Bank">
+                  </div>
+                  <p class="testimonial-name">Alhaji Ibrahim Musa</p>
+                  <p class="text-muted text-small">CTO, Sterling Microfinance Bank</p>
+              </div>
+
+            </div>
         </div>
     </section>
 
@@ -97,15 +203,64 @@
     <!-- ========== CTA SECTION ========== -->
     <section id="portfolio-cta" class="section bg-primary">
         <div class="container text-center">
+            <h2>Have a Project in Mind?</h2>
+           <p>Join  120+ businesses that trust NovaTech to bring their digital ideas to life.</p>
+           <a href="contact.html" class="btn btn-primary">Start Your Project</a>
             <!-- TODO: "Have a project in mind?" CTA linking to contact.html -->
         </div>
     </section>
 
 
-    <!-- ========== FOOTER ========== -->
+   <!-- ========== FOOTER ========== -->
     <footer id="main-footer" class="bg-primary">
         <div class="container">
-            <!-- TODO: Footer content (same as index.html) -->
+         <div class="grid grid-4"> 
+            <div class="footer-col">
+               <h4>NovaTech Solutions</h4>
+               <p>Empowering Africa's Digital Future-
+                 One Solution at a Time. We deliver world-class
+                 technology solutions to businesses across Nigeria
+                 and west Africa.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="services.html">Web Development</a></li>
+                    <li><a href="services.html">Cloud &amp; DevOps</a></li>
+                    <li><a href="services.html">Mobile Apps</a></li>
+                    <li><a href="services.html">Cybersecurity</a></li>
+                    <li><a href="services.html">Tech Training</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">     
+                <h4>Get in Touch</h4>
+                <p> 📍14 Ademola Adetokunbo Crescent, Wuse 2,
+                   Abuja, FCT, Nigeria
+                </p>
+                <p>📞 +234 (0) 812 345 6789</p>
+                <p>✉️ info@novatechsolutions.com.ng</p>
+                <p>🕐 Mon – Fri, 8:00 AM – 5:00 PM (WAT)</p>
+            </div>
+         </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NovaTech Solutions. All rights reserved.</p>
+             <div class="footer-social">
+                 <a href="https://linkedin.com/company/novatechsolutions" aria-label="LinkedIn">LinkedIn |</a>
+                 <a href="https://twitter.com/NovaTechAbuja" aria-label="Twitter/X">Twitter |</a>
+                 <a href="mailto:info@novatechsolutions.com.ng" aria-label="Email">Email</a>
+               </div>
+            </div>
         </div>
     </footer>
 
